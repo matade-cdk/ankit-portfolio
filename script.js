@@ -171,23 +171,58 @@ projectCards.forEach(card => {
     });
 });
 
-// View All Button Toggle for Projects
-const viewAllButtons = document.querySelectorAll('.view-all-btn');
+// Project Preview Modal
+const projectModal = document.getElementById('projectModal');
+const projectModalImage = document.getElementById('projectModalImage');
+const projectModalTitle = document.getElementById('projectModalTitle');
+const projectModalText = document.getElementById('projectModalText');
+const modalCloseTargets = document.querySelectorAll('[data-close-modal]');
 
-viewAllButtons.forEach(button => {
+const openProjectModal = (card) => {
+    const image = card.querySelector('.project-image img');
+    const title = card.querySelector('.project-content h3');
+    const details = card.querySelector('.project-details p');
+
+    if (!projectModal || !projectModalImage || !projectModalTitle || !projectModalText || !image || !title || !details) {
+        return;
+    }
+
+    projectModalImage.src = image.src;
+    projectModalImage.alt = image.alt || title.textContent;
+    projectModalTitle.textContent = title.textContent;
+    projectModalText.textContent = details.textContent.trim();
+    projectModal.classList.add('active');
+    projectModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+};
+
+const closeProjectModal = () => {
+    if (!projectModal) {
+        return;
+    }
+
+    projectModal.classList.remove('active');
+    projectModal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+};
+
+document.querySelectorAll('.view-all-btn').forEach(button => {
     button.addEventListener('click', function() {
         const projectCard = this.closest('.project-card');
-        const projectDetails = projectCard.querySelector('.project-details');
-        const icon = this.querySelector('i');
-        
-        if (projectDetails.style.display === 'none' || projectDetails.style.display === '') {
-            projectDetails.style.display = 'block';
-            this.innerHTML = '<i class="fas fa-eye-slash"></i> Show Less';
-        } else {
-            projectDetails.style.display = 'none';
-            this.innerHTML = '<i class="fas fa-eye"></i> View All';
+        if (projectCard) {
+            openProjectModal(projectCard);
         }
     });
+});
+
+modalCloseTargets.forEach(target => {
+    target.addEventListener('click', closeProjectModal);
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        closeProjectModal();
+    }
 });
 
 // Add active class to navigation links based on scroll position
