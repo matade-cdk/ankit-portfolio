@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit's Portfolio - Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">ANKIT</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <img src="img/ankit_img.png" alt="Ankit's Profile Photo" class="profile-img">
+                </div>
+            </div>
+            <div class="hero-content">
+                <h3 class="greeting">— HI, I'M ANKIT M</h3>
+                <h1 class="hero-title">
+                    <span class="title-static">I'M A </span>
+                    <span class="title-dynamic"></span>
+                </h1>
+                <p class="hero-description">
+                    I'm a final year IT student with 3+ months of internship experience as a Full Stack Developer. 
+                    I specialize in MERN stack development, building responsive web applications, mobile apps with 
+                    React Native, and exploring generative AI. Passionate about creating clean & user-friendly 
+                    experiences that solve real-world problems.
+                </p>
+                <a href="#about" class="cta-button">
+                    MORE ABOUT ME
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Social Links -->
+        <div class="social-sidebar">
+            <a href="#" class="social-icon" title="Home"><i class="fas fa-home"></i></a>
+            <a href="#" class="social-icon" title="User"><i class="fas fa-user"></i></a>
+            <a href="#" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="#" class="social-icon" title="Briefcase"><i class="fas fa-briefcase"></i></a>
+            <a href="#" class="social-icon" title="Comments"><i class="fas fa-comments"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">ABOUT ME</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who am I?</h3>
+                    <p>
+                        I'm a final year Information Technology student with hands-on experience in full stack development 
+                        and real-world project execution. I completed a 3-month internship at Invicta (July - September 2025) 
+                        as a Full Stack Developer, where I developed a CRM web application for students planning to study abroad.
+                    </p>
+                    <p>
+                        I specialize in the MERN stack (MongoDB, Express.js, React, Node.js) and have experience building 
+                        role-based dashboards, implementing access control systems, and working on both frontend and backend APIs. 
+                        I'm passionate about creating responsive web applications, mobile apps using React Native, and exploring 
+                        generative AI technologies.
+                    </p>
+                    <p>
+                        Along with internships, I also take on freelance work for local businesses, helping them build clean 
+                        websites and improve their online presence. I have worked with gym and car rental projects, along with 
+                        SEO support for local shops, to help attract more clients and grow their business. I have also worked 
+                        on a crypto token website, creating a modern landing page to present the brand and support its online reach.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>3+</h3>
+                        <p>Months Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>8.55</h3>
+                        <p>CGPA</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>20+</h3>
+                        <p>Projects Built</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">MY SKILLS</h2>
+            
+            <!-- Programming Languages -->
+            <div class="programming-languages">
+                <h3>Programming Languages</h3>
+                <div class="language-tags">
+                    <span class="language-tag">
+                        <i class="fas fa-code"></i>
+                        C / C++
+                    </span>
+                    <span class="language-tag">
+                        <i class="fab fa-js"></i>
+                        JavaScript
+                    </span>
+                    <span class="language-tag">
+                        <i class="fab fa-python"></i>
+                        Python
+                    </span>
+                    <span class="language-tag">
+                        <i class="fab fa-java"></i>
+                        Java
+                    </span>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CSS3</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React Native</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & Tools -->
+                <div class="skill-category">
+                    <h3>Backend & Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Git & GitHub</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Responsive Design</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>MongoDB</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Generative AI</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Stack Icons -->
+            <div class="tech-stack">
+                <h3>Technologies I Work With</h3>
+                <div class="tech-icons">
+                    <div class="tech-icon">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-node"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>React Native</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                        <span>AI/ML</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">EXPERIENCE</h2>
+            <div class="experience-timeline">
+                <!-- Freelance Experience -->
+                <div class="experience-item">
+                    <div class="experience-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Freelance Web Developer</h3>
+                                <h4>Sharp Economy (Crypto Token)</h4>
+                            </div>
+                            <span class="experience-date">2022 - 2023</span>
+                        </div>
+                        <ul class="experience-description">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Developed and deployed the official website for Sharp Economy crypto token
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Created responsive and modern UI/UX design for cryptocurrency platform
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Implemented features showcasing tokenomics, roadmap, and community engagement
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Invicta Internship -->
+                <div class="experience-item">
+                    <div class="experience-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Full Stack Developer Intern</h3>
+                                <h4>Invicta</h4>
+                            </div>
+                            <span class="experience-date">July - Sept 2025</span>
+                        </div>
+                        <ul class="experience-description">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Developed a CRM web application using Next.js for students planning to study abroad
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Implemented role-based dashboards and access control system (Student, Counselor, Admin)
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Worked on frontend with Next.js, backend APIs, and database integration with MongoDB
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Local Business Development -->
+                <div class="experience-item">
+                    <div class="experience-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Web Developer & SEO Specialist</h3>
+                                <h4>Local Business Growth Project</h4>
+                            </div>
+                            <span class="experience-date">2025 - 2026</span>
+                        </div>
+                        <ul class="experience-description">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Built modern, responsive websites for local businesses including gym and car rental services
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Implemented online booking and management systems for service-based businesses
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Performed SEO optimization for local shops to improve search visibility and online presence
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">EDUCATION</h2>
+            <div class="education-timeline">
+                <!-- Bachelor's Degree -->
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3>Bachelor of Engineering in Information Technology</h3>
+                            <span class="education-date">Aug 2021 - May 2025</span>
+                        </div>
+                        <h4>Goa College of Engineering</h4>
+                        <p class="education-cgpa">CGPA: <strong>8.44</strong></p>
+                        <p class="education-description">
+                            Final year Information Technology student with hands-on experience in full stack development 
+                            and real-world project execution. Focused on web development and building innovative solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Intermediate (12th) -->
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3>Intermediate (12th)</h3>
+                            <span class="education-date">2022</span>
+                        </div>
+                        <h4>Kendriya Vidyalaya, Ponda</h4>
+                        <p class="education-cgpa">CGPA: <strong>7.56</strong></p>
+                    </div>
+                </div>
+
+                <!-- SSC (10th) -->
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3>SSC (10th)</h3>
+                            <span class="education-date">2020</span>
+                        </div>
+                        <h4>Dada Vaidya High School, Curti, Ponda</h4>
+                        <p class="education-cgpa">CGPA: <strong>8.3</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications">
+                <h3>Certifications</h3>
+                <div class="certification-grid">
+                    <div class="certification-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Generative AI</h4>
+                        <p>Educosys (2025)</p>
+                    </div>
+                    <div class="certification-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Programming, Data Structures and Algorithms using Java</h4>
+                        <p>NPTEL (2024)</p>
+                    </div>
+                    <div class="certification-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Complete Web Development</h4>
+                        <p>Udemy (2024)</p>
+                    </div>
+                    <div class="certification-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Python Programming</h4>
+                        <p>Udemy (2024)</p>
+                    </div>
+                    <div class="certification-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Introduction to Soft Skills</h4>
+                        <p>TCS iON (2024)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">MY PROJECTS</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/agrimatrix.png" alt="AgriMetrix project preview">
+                    </div>
+                    <div class="project-content">
+                        <h3>AgriMatic</h3>
+                        <div class="project-actions">
+                            <a href="https://github.com/matade-cdk/AgriMetrix" target="_blank" class="project-btn source-btn">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <button class="project-btn view-all-btn">
+                                <i class="fas fa-eye"></i> View All
+                            </button>
+                        </div>
+                        <div class="project-details" style="display: none;">
+                            <p>AgriMetrix is an AI/ML-powered agricultural intelligence platform that helps farmers make better crop decisions through data-driven recommendations, market demand insights, and smart crop rotation planning. It is built to improve productivity, reduce uncertainty, and support sustainable farming with practical intelligence for the agricultural ecosystem. The platform focuses on making complex agricultural data easier to understand so farmers can act faster and choose the right crop strategy for better results.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/ppt_generator.png" alt="PPT Generator project preview">
+                    </div>
+                    <div class="project-content">
+                        <h3>PPT Generator</h3>
+                        <div class="project-actions">
+                            <a href="https://github.com/matade-cdk/ai_presentation_p" target="_blank" class="project-btn source-btn">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <button class="project-btn view-all-btn">
+                                <i class="fas fa-eye"></i> View All
+                            </button>
+                        </div>
+                        <div class="project-details" style="display: none;">
+                            <p>PPT Generator is a smart web application designed to simplify presentation creation by automating slide generation and making the workflow faster for users. It focuses on saving time, improving productivity, and turning ideas into structured presentations with less manual effort. The project is useful for anyone who wants to create clean, organized slides quickly without spending too much time on manual formatting or design work.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/sharpeconomy_2.png" alt="Sharp Economy 2.0 project preview">
+                    </div>
+                    <div class="project-content">
+                        <h3>Sharp Economy 2.0</h3>
+                        <div class="project-actions">
+                            <a href="https://github.com/matade-cdk/Sharp_Economy_2.0" target="_blank" class="project-btn source-btn">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <button class="project-btn view-all-btn">
+                                <i class="fas fa-eye"></i> View All
+                            </button>
+                        </div>
+                        <div class="project-details" style="display: none;">
+                            <p>Sharp Economy 2.0 is the upgraded version of the original Sharp Economy website, rebuilt with a cleaner interface, smoother performance, and a better user experience. It presents the project in a more modern and scalable way while improving clarity, responsiveness, and overall visual appeal. The redesign also helps the brand look more professional and trustworthy while making the website easier to explore on different devices.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/tourgenius.png" alt="TourGenious project preview">
+                    </div>
+                    <div class="project-content">
+                        <h3>TourGenious</h3>
+                        <div class="project-actions">
+                            <a href="https://github.com/matade-cdk/tourgenious-mvp" target="_blank" class="project-btn source-btn">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <button class="project-btn view-all-btn">
+                                <i class="fas fa-eye"></i> View All
+                            </button>
+                        </div>
+                        <div class="project-details" style="display: none;">
+                            <p>TourGenious is a full-stack travel assistant MVP built to solve real travel problems using modern web technologies and AI. The app brings together bookings, local events, nearby places, weather updates, and an AI chatbot in one platform to create a reliable, multilingual, and user-friendly travel experience. It was designed to make travel planning simpler by putting useful information and support tools in one place for a smoother journey.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/upi_fraud_detection.png" alt="UPI Fraud Detection project preview">
+                    </div>
+                    <div class="project-content">
+                        <h3>UPI Fraud Detection</h3>
+                        <div class="project-actions">
+                            <a href="https://github.com/matade-cdk/UPI_Fraud_Detection" target="_blank" class="project-btn source-btn">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <button class="project-btn view-all-btn">
+                                <i class="fas fa-eye"></i> View All
+                            </button>
+                        </div>
+                        <div class="project-details" style="display: none;">
+                            <p>AI-powered UPI fraud detection system that identifies anomalies and suspicious transactions in real time. Users get instant scam alerts when risky activity is detected, while the admin dashboard monitors unusual patterns and helps track fraud across the platform. The system is designed to improve digital payment safety, give users more confidence during transactions, and help administrators respond quickly when suspicious activity appears.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/scanlyf.png" alt="Scanlyf project preview">
+                    </div>
+                    <div class="project-content">
+                        <h3>Scanlyf</h3>
+                        <div class="project-actions">
+                            <a href="https://github.com/matade-cdk/scanlyf-fyp" target="_blank" class="project-btn source-btn">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <button class="project-btn view-all-btn">
+                                <i class="fas fa-eye"></i> View All
+                            </button>
+                        </div>
+                        <div class="project-details" style="display: none;">
+                            <p>Scanlyf is an intelligent food scanning application that helps users track their nutritional intake by scanning product barcodes to instantly get calorie and protein information. The app features a fridge recipe section that suggests meals based on available ingredients, a leaderboard to gamify healthy eating habits, and crypto token rewards to encourage user consistency. The integration of blockchain-based incentives motivates users to maintain healthy lifestyles while building a community of health-conscious individuals.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/exam_helper.png" alt="Exam Helper project preview">
+                    </div>
+                    <div class="project-content">
+                        <h3>Exam Helper</h3>
+                        <div class="project-actions">
+                            <a href="https://github.com/matade-cdk/Exam-Helper" target="_blank" class="project-btn source-btn">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <button class="project-btn view-all-btn">
+                                <i class="fas fa-eye"></i> View All
+                            </button>
+                        </div>
+                        <div class="project-details" style="display: none;">
+                            <p>Exam Helper is an intelligent exam preparation platform that uses RAG (Retrieval Augmented Generation) to extract knowledge from uploaded documents and provide accurate answers to user questions. The system analyzes documents to identify important questions and concepts, automatically generates online multiple-choice questions for practice, and creates subjective question papers for comprehensive exam preparation. It serves as a complete study companion for students preparing for exams across different subjects and difficulty levels.</p>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/cv_inspector.png" alt="CV Inspector project preview">
+                        </div>
+                        <div class="project-content">
+                            <h3>CV Inspector</h3>
+                            <div class="project-actions">
+                                <a href="https://github.com/matade-cdk/CVInspector" target="_blank" class="project-btn source-btn">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                                <button class="project-btn view-all-btn">
+                                    <i class="fas fa-eye"></i> View All
+                                </button>
+                            </div>
+                            <div class="project-details" style="display: none;">
+                                <p>CV Inspector is an intelligent resume analysis tool that helps job seekers optimize their CVs by providing ATX scores and detailed feedback. The application analyzes resumes for important fields, formatting, and content quality, then suggests improvements to increase the resume's effectiveness. Users can upload their resume, get scored, and view recommendations for critical sections to add or enhance to make their CV more competitive for their target roles. The platform supports multiple resume formats and provides actionable insights to help candidates stand out in the job market.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/smarthealthracking.png" alt="Smart Health Tracking project preview">
+                        </div>
+                        <div class="project-content">
+                            <h3>Smart Health Tracking</h3>
+                            <div class="project-actions">
+                                <a href="https://github.com/matade-cdk/health-tracking" target="_blank" class="project-btn source-btn">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                                <button class="project-btn view-all-btn">
+                                    <i class="fas fa-eye"></i> View All
+                                </button>
+                            </div>
+                            <div class="project-details" style="display: none;">
+                                <p>Smart Health Tracking is a comprehensive health management platform built for the healthcare ecosystem. It consists of two main components: a web application for doctors to manage patient data and monitor health records, and a mobile app for patients to log their daily health information, track metrics, and view analytics. The platform features multilingual support, real-time health analytics, role-based access control, and a user-friendly interface designed for both healthcare providers and patients. Doctors can track patient progress, generate health reports, and provide timely interventions based on collected data, while patients can maintain health records, monitor trends, and stay engaged with their healthcare journey.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/crm_eduadvise.png" alt="Invicta EduAdvise CRM project preview">
+                        </div>
+                        <div class="project-content">
+                            <h3>Invicta EduAdvise CRM</h3>
+                            <div class="project-actions">
+                                <a href="https://github.com/matade-cdk/Invicta-Internship" target="_blank" class="project-btn source-btn">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                                <button class="project-btn view-all-btn">
+                                    <i class="fas fa-eye"></i> View All
+                                </button>
+                            </div>
+                            <div class="project-details" style="display: none;">
+                                <p>Invicta EduAdvise CRM is a comprehensive web application designed to help students plan their overseas education journey. Built with Next.js and MongoDB, the platform provides role-based dashboards and access control systems for three user types: Students, Counselors, and Admins. The application features a complete CRM system where students can track their applications, counselors can manage student inquiries and provide guidance, and admins can oversee the entire process. It streamlines the education consultation workflow, making it easier for students to access information, track progress, and connect with experienced counselors for personalized guidance on studying abroad opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="project-modal" id="projectModal" aria-hidden="true">
+        <div class="project-modal-backdrop" data-close-modal></div>
+        <div class="project-modal-content" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+            <button type="button" class="project-modal-close" aria-label="Close project preview" data-close-modal>
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="project-modal-image-wrap">
+                <img id="projectModalImage" src="" alt="Project preview image">
+            </div>
+            <div class="project-modal-body">
+                <h3 id="projectModalTitle"></h3>
+                <p id="projectModalText"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together!</h3>
+                    <p>
+                        I'm currently looking for internship and freelance opportunities. 
+                        If you have a project in mind or just want to chat, feel free to reach out!
+                    </p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>ankitmatade20@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Goa, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/matade-cdk" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ankit-matade-623b042aa" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="6" id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        SEND MESSAGE
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ankit's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
